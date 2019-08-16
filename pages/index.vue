@@ -1,0 +1,14 @@
+<template>
+  <div class="container">
+    Hello
+    <el-button type="primary">Primary</el-button>
+    <el-button type="success">Success</el-button>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style>
+</style>
