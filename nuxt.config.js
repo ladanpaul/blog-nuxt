@@ -1,4 +1,3 @@
-
 export default {
   mode: 'universal',
   /*
@@ -12,7 +11,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Muli&display=swap' }
     ]
   },
   /*
@@ -23,12 +23,13 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/global'
+    '@/assets/index',
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/element-ui',
   ],
   /*
   ** Nuxt.js dev-modules
@@ -39,13 +40,6 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    [
-      'nuxt-element-ui',
-      {
-        components: ['Button', 'DatePicker'],
-        locale: 'fr',
-      },
-    ],
   ],
   /*
   ** Build configuration
