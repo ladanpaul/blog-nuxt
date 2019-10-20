@@ -12,9 +12,7 @@
       :key="item.page"
       :index="item.page"
       :route="{ name: item.page }"
-    >
-      {{ item.name }}
-    </el-menu-item>
+    >{{ item.name }}</el-menu-item>
   </el-menu>
 </template>
 
@@ -22,7 +20,8 @@
 const menuList = [
   { name: "Home", page: "index" },
   { name: "Users", page: "users" },
-  { name: "About", page: "about" }
+  { name: "About", page: "about" },
+  { name: "Login", page: "login" }
 ];
 
 export default {
